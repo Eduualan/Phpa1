@@ -1,0 +1,8 @@
+Options -Indexes
+
+# Bloquear acesso direto à pasta app
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^app/ - [F,L]
+    RewriteRule ^sql/ - [F,L]
+</IfModule>
